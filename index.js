@@ -24,8 +24,9 @@ function myFunction() {
                 var impuesto_dxc = response.data['impuesto'];
                 var sueldo_dxc = response.data['sueldo'];
                 var ahorro_dxc = response.data['ahorro'];
+                var uf = response.data['uf'];
 
-                div.innerHTML = '<table class="table"><thead class="thead-dark"><tr><th scope="col">Variable</th><th scope="col">Valor</th></tr></thead><tbody><tr><td>10%</td><td>' + dxc + '</td></tr><tr><td>Saldo</td><td>' + saldo_dxc + '</td></tr><tr><td>Impuesto</td><td>'+ impuesto_dxc + '</td></tr><tr><td>Sueldo</td><td>' + sueldo_dxc + '</td></tr><tr><td>Ahorro</td><td>' + ahorro_dxc + '</td></tr></tbody></table>';
+                div.innerHTML = '<table class="table"><thead class="thead-dark"><tr><th scope="col">Variable</th><th scope="col">Valor</th></tr></thead><tbody><tr><td>10%</td><td>' + dxc + '</td></tr><tr><td>Saldo</td><td>' + saldo_dxc + '</td></tr><tr><td>Impuesto</td><td>'+ impuesto_dxc + '</td></tr><tr><td>Sueldo</td><td>' + sueldo_dxc + '</td></tr><tr><td>Ahorro</td><td>' + ahorro_dxc + '</td></tr><tr><td>UF</td><td>' + uf + '</td></tr></tbody></table>';
 
                 div.innerHTML += '<br><img src="https://64.media.tumblr.com/44b19750a163afaa3b624f96d6c26731/tumblr_mjzgl7nPLO1qzt9mco1_500.gifv" alt="description of gif" />';
             })
